@@ -195,3 +195,100 @@ section{
     width: 100%;
     padding: 18px 30px;
 }
+/* Responsive styles */
+@media screen and (max-width:576px) {
+    .banner{
+        text-align: left;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .banner img{
+        width: 50%;
+    }
+    .header{
+        background-image: none;
+        
+    }
+    .banner button{
+        margin-top: 10px;
+        display: flex;
+    }
+   
+    .banner img{
+        width: 100%;
+    }
+    nav{
+        padding: 10px;
+        justify-content: space-between;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+        
+        }
+    .about{
+        padding: 10px;
+    }
+    .about-info-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 10px;
+    }
+    .skills-container, .resume-content{
+        flex-direction: column;
+        gap: 10px;   
+    }
+    .skill{
+        margin-top: 0;
+    }
+    .what-i-do .pera{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    section{
+        margin-top: 30px;
+    }
+    .section-title{
+        margin-top: 0;
+        font-size: 2rem;
+    }
+    .resume-content div{
+        padding: 10px;
+    }
+    .resume-title{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .resume-button{
+        margin: 0 auto 30px;
+    }
+
+    .contact{
+        padding: 10px;
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+    .contact input[type="text"],
+    input[type="email"],
+    textarea {
+        pad: 10px 5px;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .what-i-do .pera{
+        width: 100%;
+        padding: 10px;
+    }
+    .skills-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-content: initial;
+    }
+    .skill{
+        width: 100%;
+    }
+}
